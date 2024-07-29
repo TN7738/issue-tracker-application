@@ -1,0 +1,143 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* .add-issue-wrapper {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.add-issue-wrapper .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: solid 1px #fff;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.add-issue-wrapper h1 {
+    color: #fff;
+}
+
+.add-issue-wrapper form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.add-issue-wrapper form div {
+    display: flex;
+    margin-top: 10px;
+}
+
+.add-issue-wrapper form div:first-child {
+    margin-top: 0;
+}
+
+.add-issue-wrapper form div label {
+    width: 70px;
+    display: block;
+}
+
+.add-issue-wrapper form div label span {
+    color: #ff0000;
+}
+
+.add-issue-wrapper form .submit-btn {
+    margin: 10px auto 0;
+    display: block;
+}*/
+
+.add-issue-wrapper form .error {
+    color: #ff0000;
+    font-size: 14px;
+    text-align: center;
+    display: none;
+}
+
+.add-issue-wrapper form .error.show {
+    display: block;
+}
+
+.issue-details-wrap table th,
+.issue-details-wrap table td {
+    border: solid 1px #000;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: left;
+}
+
+.header-wrap {
+    background-color: #282c34;
+    padding: 25px;
+}
+.header-wrap ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+.header-wrap ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-content {
+    min-height: calc(100vh - 175px);
+}
+
+.slider-wrap img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #282c34;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
