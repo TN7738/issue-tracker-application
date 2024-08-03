@@ -1,10 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import {
-    createBrowserRouter,
-    createHashRouter,
-    RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import IssueList from "./components/IssueList";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
@@ -27,11 +23,11 @@ const cache = new InMemoryCache({
 });
 
 const client = new ApolloClient({
-    uri: "http://localhost:5000/graphql",
+    uri: "/graphql",
     cache,
 });
 
-const router = createHashRouter([
+const router = createBrowserRouter([
     {
         path: "/",
         element: <Body />,
